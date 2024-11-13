@@ -1,0 +1,106 @@
+.container{
+    width: 80%;
+    border: 2px solid gray;
+    margin: 0 auto;
+    height: auto;
+    margin-top: 80px;
+    background-color: #a7a5a5;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.container>h1{
+    text-align: center;
+}
+.container>p{
+    text-align: center;
+}
+.experienceBox{
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #b4b4b4;
+    height: auto;
+    margin-top: 20px;
+    padding: 20px;
+}
+.pTag{
+    width: 90%;
+    margin: 0 auto;
+}
+.box {
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #a7a5a5;
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+}
+
+.box:hover {
+    transform: scale(1.05); 
+    transform: rotate(-1deg);
+}
+
+
+.box:nth-child(1){
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.middleDiv,.lowerDiv{
+    font-weight: 400;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 10px;
+    border-top: 1px solid gray;
+}
+.upperDivInBox{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.textDiv{
+    width: 80%;
+    text-align: start;
+    font-weight: 700;
+}
+.imgDiv{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textDiv>h1{
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+.textDiv>p,small{
+   margin: 0;
+}
+img{
+    width: 50px;
+}
+
+@media (max-width: 900px) {
+    .container{
+        width: 100%;
+    }
+    .box{
+        padding: 10px;
+    }
+    .upperDivInBox{
+        width: 100%;
+    }
+    .textDiv>h1{
+        font-size: 20px;
+    }
+}

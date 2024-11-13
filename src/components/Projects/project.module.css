@@ -1,0 +1,214 @@
+.portfolio {
+    padding: 2rem;
+    text-align: center;
+    background-color: #b4b4b4;
+    width: 75%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #222;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card {
+    /* background: linear-gradient(135deg, #a8edea, #fed6e3); */
+    background-color: #a7a5a5;
+    border: 2px solid gray;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.15), transparent 60%);
+    transform: rotate(-25deg);
+    transition: opacity 0.3s ease;
+}
+
+.card:hover::before {
+    opacity: 0.6;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    border-radius: inherit;
+    margin-bottom: 10px;
+    object-fit: cover;
+    height: 200px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    font-size: 1.6rem;
+    margin: 0.1rem 0;
+    color: #333;
+    font-weight: 900;
+}
+
+.card p {
+    color: black;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.links {
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.links a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    background-color: rgba(221, 218, 218, 0.6);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.links a:hover {
+    color: #003a75;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+}
+
+.modal {
+    background-color: #a7a5a5;
+    padding: 2rem;
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1001;
+    font-weight: 900;
+    text-align: center;
+}
+
+.modal>img{
+    width: 100%;
+    height: auto; /* Let the height adjust based on the aspect ratio */
+    max-height: 250px;
+    border-radius: inherit;
+    object-fit: contain; /* Keeps the cover effect, but now height adjusts */
+    margin-bottom: 1rem;
+  }
+.close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.3rem;
+    font-size: 2.2rem;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #ff0000;
+}
+
+.modal h3 {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    color: #333;
+}
+
+.modal p {
+    color: #555;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.modal .links {
+    margin-top: 1rem;
+    margin: 0 auto;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal .links a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 1rem;
+    text-align: center;
+    width: 30%;
+    transition: color 0.3s ease;
+}
+
+.modal .links a:hover {
+    color: #0056b3;
+}
+@media (max-width: 1000px) {
+    .portfolio{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .grid{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .modal {
+      width: 70%;
+    }
+    .card .links{
+        width: 100%;
+        display: flex;
+    }
+  }

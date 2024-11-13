@@ -1,0 +1,84 @@
+.container {
+    background-color: gray;
+    height: auto;
+    border: 2px  blue;
+    border-radius: 54% 0% 0% 25% / 6% 25% 25% 0%;
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 600px;
+    margin: 0 auto;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+ 
+.sec {
+   border-radius: 10px;
+   width: 90%;
+   background-color: rgb(197, 198, 199);
+   padding: 10px;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 0 auto;
+   gap: 30px;
+   height: 100%;
+   justify-content: center;
+   border-radius: inherit;
+   box-sizing: border-box; /* Ensures padding is included in the width */
+
+}
+.sec>p{
+   font-size: 30px;
+   margin: 0;
+   font-weight: 700;
+}
+.NavUl{
+    display: flex;
+    list-style-type: none;
+    margin: 0 auto;
+    width: auto;
+    padding: 10px;
+    gap: 20px;
+}
+.sec>ul>li>a{
+    color: black;
+    font-size:18px ;
+    text-decoration: none;
+}
+.sec>div{
+    display: flex;
+    width: 40%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+@media (max-width:900px) {
+    .container{
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px; /* Adjust padding for small screens */
+        height: auto;
+    }
+    .sec{
+        width: 90%; /* Ensure sec takes 90% of the container width */
+        display: flex;
+        margin: 0 auto ;
+    }
+    .sec>ul{
+        margin: 0 auto;
+        gap: 10px;
+        flex-direction: column;
+        width: auto;
+        padding: 20px;
+    }
+    .sec>ul>li>a{
+        color: black;
+        font-size:15px ;
+        text-decoration: none;
+    }
+    .sec>div{
+        width: 60%;
+    }
+}

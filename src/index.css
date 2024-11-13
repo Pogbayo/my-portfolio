@@ -1,0 +1,36 @@
+:root{
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    /* overflow-x: hidden; */
+    background-color: #b4b4b4;
+    scrollbar-width: 20px; 
+    -ms-overflow-style: none;  
+}
+
+body::-webkit-scrollbar {
+    display: none; 
+}
+.app{
+    height: auto;
+    border: 2px solid gray;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    overflow-x: visible;
+}
+@media (max-width:900px){
+    .app{
+     /* overflow-x: hidden; */
+     padding: 10px;
+    }
+}

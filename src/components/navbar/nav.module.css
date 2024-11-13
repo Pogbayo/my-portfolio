@@ -1,0 +1,146 @@
+
+.navHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #b4b4b4;
+    z-index: 1000; /* Ensure navbar stays on top */
+    box-shadow: 0 4px 2px -2px gray; /* Optional shadow */
+    width: 95%; /* Full width to avoid layout shifts */
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+.container {
+    height: 10vh;
+    position: relative;
+}
+  
+.hamburgerMenu{
+    display: none;
+}
+.hamburger{
+    cursor: pointer;
+    display: none;
+}
+.nameLogo{
+    width: 10%;
+}
+.nav{
+    width: 50%;
+}
+.navUl{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.navUl>li>a{
+    color: black;
+    font-weight: 900;
+    text-decoration: none;
+}
+.navGitButton{
+    border: 2px transparent black;
+    width: 180px;
+    height: 40px;
+    background-color: transparent;
+}
+.navGitButton>a{
+    color: black;
+    text-decoration: none;
+}
+@media (max-width:1000px){
+    
+     
+     .hamburger{
+        display: block;
+     }
+     .hamburgerMenu {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 73vh;
+        width: 100%;
+        overflow-x: hidden;
+        z-index: 1001;
+        
+        /* background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), 
+                    url(/images/old-cement-wall-texture.jpg); */
+        background: rgba(255, 255, 255, 0.9);
+
+        align-items: center;
+        padding-top: 30px;
+    }
+    
+    .hamNav{
+        height: 80%;
+        width: 90%;
+        text-align: center;
+    }
+    .hamNavUl{
+        height: 70%;
+        width: 80%;
+        margin-top: 10px;
+        gap: 20px;
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .hamNavUl>li{
+        list-style-type: none;
+    }
+    .hamNavUl>li>a{
+        text-decoration: none;
+        color: black;
+    }
+    .hamButtons{
+        height: 100px;
+        display:flex ; 
+        flex-direction: column;  
+        justify-content: space-between;
+        align-items: center;
+    }
+    .closeDiv{
+        width: 100%;
+        padding-left: 73px;
+    }
+    .closeDiv:hover{
+        cursor: pointer;
+
+    }
+    .closeButton{
+       border: 2px solid black; 
+       width: 50px;
+       height: 40px;
+   }
+    
+    .hamNavGitButton{
+        width: 200px;
+        border-radius: 10px;
+        height: 50px;
+    }
+    .nav{
+        display: none;
+    }
+    .navGitButton{
+        display: none;
+    }
+    
+    .hamNavGitButton>a{
+        color: black;
+        text-decoration: none;
+    }
+}
