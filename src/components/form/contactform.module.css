@@ -111,10 +111,12 @@
         padding: 5px;
     }
     .contactForm{
+        padding: 10px;
         width: 90%;
+        margin: 0 auto;
     }
    .contactForm input{
-        width: 90%;
+        width: 87%;
         padding: 20px 20px;
         border: none;
         border-radius: 20px;
@@ -127,7 +129,7 @@
         margin: 0;
     }
     .contactForm textarea {
-        width: 93%;
+        width: 87%;
         height: 200px;
         padding: 15px 20px;
         margin-top: 1px;
