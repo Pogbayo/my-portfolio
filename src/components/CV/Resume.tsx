@@ -1,4 +1,4 @@
-import styles from "./resume.module.css";
+import styles from "./Resume.module.css";
 import { useNavigate } from "react-router-dom"; // For navigation if you're using React Router
 
 export const Resume: React.FC = () => {
