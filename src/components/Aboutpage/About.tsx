@@ -32,7 +32,7 @@ export const About = () => {
       <div className={styles.AboutDesc}>
         <h1>
           Hi, I am Adebayo <br />
-          Peter.
+          Olu
         </h1>
         <p>
           I’m a proficient software developer with experience in React,
