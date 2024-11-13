@@ -4,6 +4,7 @@
     width: 80%;
     box-shadow: rgba(77, 85, 88, 0.9) 0px 30px 30px -20px;
     margin: 20px auto;
+    margin-bottom: 90px;
 }
 .formHeader{
     text-align: center;
@@ -104,6 +105,14 @@
 }
 
 @media (max-width: 1700px) {
+    .container{
+        width: 100%;
+        max-width: 0 auto;
+        padding: 5px;
+    }
+    .contactForm{
+        width: 90%;
+    }
    .contactForm input{
         width: 90%;
         padding: 20px 20px;
@@ -113,8 +122,12 @@
         color: #333;
         transition: all 0.3s ease;
     }
+    .formHeader>h1{
+        font-size:30px ;
+        margin: 0;
+    }
     .contactForm textarea {
-        width: 90%;
+        width: 93%;
         height: 200px;
         padding: 15px 20px;
         margin-top: 1px;

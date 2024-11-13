@@ -95,7 +95,7 @@
     cursor: pointer;
   }
   .btn:hover{
-    background: rgb(228, 206, 177);
+    background: rgb(134, 132, 129);
     color: black;
   }
 
@@ -119,8 +119,8 @@
 
      .myImg>main{
         /* background-image: url(/images/n.jpg); */
-        height: 350px;
-        width: 350px;
+        height: 250px;
+        width: 250px;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;

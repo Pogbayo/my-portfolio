@@ -6,7 +6,7 @@
     margin: 0 auto;
 }
 
-h2 {
+.portfolio h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
     color: #222;
@@ -199,6 +199,9 @@ h2 {
     .portfolio{
         width: 80%;
         margin: 0 auto;
+    }
+    .portfolio h2{
+        font-size: 30px;
     }
     .grid{
         width: 100%;
