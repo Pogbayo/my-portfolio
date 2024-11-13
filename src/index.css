@@ -1,7 +1,6 @@
 :root{
     line-height: 1.5;
-    font-family: 'Courier New', Courier, monospace;
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 html {
     scroll-behavior: smooth;
