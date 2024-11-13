@@ -197,14 +197,20 @@
 }
 @media (max-width: 1000px) {
     .portfolio{
-        width: 80%;
+        width: 100%;
+        padding: 4px;
         margin: 0 auto;
     }
     .portfolio h2{
         font-size: 30px;
     }
+    .card{
+        margin: 0 auto;
+    }
+    
     .grid{
         width: 100%;
+        padding: 0;
         margin: 0 auto;
     }
     .modal {
