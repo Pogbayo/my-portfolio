@@ -1,11 +1,12 @@
-import styles from "./contactform.module.css";
-
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { ContactPropsType } from "../lib/data";
 import emailjs from "emailjs-com";
+import { ContactPropsType } from "../lib/data"; // Assuming your data type is correct
+import styles from "./contactform.module.css"; // Ensure styles are imported correctly
 
+// Zod validation schema for the form
 const contactSchema = z.object({
   email: z.string().email("Please enter a valid email"),
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -14,6 +15,7 @@ const contactSchema = z.object({
 });
 
 const ContactForm = () => {
+  const [showSuccess, setShowSuccess] = useState(false); // State to control visibility
   const {
     register,
     handleSubmit,
@@ -23,6 +25,7 @@ const ContactForm = () => {
     resolver: zodResolver(contactSchema),
   });
 
+  // Handle form submission
   const onSubmit = async (data: ContactPropsType) => {
     reset();
     const templateParams = {
@@ -31,7 +34,9 @@ const ContactForm = () => {
       subject: data.subject,
       message: data.message,
     };
+
     try {
+      // Send email via EmailJS
       const result = await emailjs.send(
         "service_4dcwyzd",
         "template_u12wotc",
@@ -40,7 +45,11 @@ const ContactForm = () => {
       );
 
       if (result.status === 200) {
-        console.log("Sent successfully");
+        setShowSuccess(true); // Show success notification
+
+        setTimeout(() => {
+          setShowSuccess(false);
+        }, 1800);
       }
     } catch (error) {
       console.error("Error sending email:", error);
@@ -55,6 +64,18 @@ const ContactForm = () => {
           Feel free to reach out to me for any questions or opportunities!
         </h3>
       </div>
+
+      {/* Success notification */}
+      {showSuccess && (
+        <div
+          className={`${styles.successNotification} ${
+            showSuccess ? "" : styles.fadeOut
+          }`}
+        >
+          Message sent successfully!
+        </div>
+      )}
+
       <form className={styles.contactForm} onSubmit={handleSubmit(onSubmit)}>
         <label>Email</label>
         <input
