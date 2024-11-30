@@ -29,7 +29,7 @@ export const Footer = () => {
           <FaWhatsapp size={30} color="green" />
           <FaGithub size={30} />
         </div>
-        <footer>© @024 Adesanya Adebayo. All rights reserved.</footer>
+        <footer>© 2024 Adesanya Adebayo. All rights reserved.</footer>
       </section>
     </div>
   );

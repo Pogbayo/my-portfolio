@@ -16,7 +16,7 @@ const Project = () => {
   };
 
   return (
-    <section className={styles.portfolio} id="project">
+    <section className={styles.container} id="project">
       <h2>My Projects</h2>
       <div className={styles.grid}>
         {projects.map((project, index) => (

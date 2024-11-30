@@ -16,7 +16,7 @@ export const Skill = () => {
   return (
     <div className={styles.container} id="skill">
       <h1>Skills</h1>
-      <p>Here are some of the skills I have learnt for the past 1 year</p>
+      <p style={{ fontSize: 20 }}>Listed below are some of my skills </p>
       <section className={styles.boxDiv}>
         <div className={styles.box}>
           <h1>Frontend</h1>

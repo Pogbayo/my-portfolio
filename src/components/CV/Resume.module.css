@@ -1,4 +1,4 @@
-
+/* 
 .cvContainer {
     max-width: 900px;
     margin: 20px auto;
@@ -26,13 +26,12 @@
   
   .homeButton:hover {
     background-color: #005bb5;
-    transform: scale(1.05); /* Slight zoom effect */
+    transform: scale(1.05); 
   }
   
   .homeButton:focus {
     outline: none;
   }
-  /* Header section */
   .cvHeader {
     text-align: center;
     border-bottom: 3px solid #0066cc;
@@ -52,7 +51,6 @@
     font-size: 1.2em;
   }
   
-  /* Contact Information */
   .cvContactInfo {
     list-style-type: none;
     padding: 0;
@@ -80,7 +78,6 @@
     text-decoration: underline;
   }
   
-  /* Section Titles */
   .cvSectionTitle {
     font-size: 1.8em;
     color: #0066cc;
@@ -90,7 +87,6 @@
     font-weight: bold;
   }
   
-  /* Content Sections */
   .cvSummarySection,
   .cvEducationSection,
   .cvWorkExperienceSection,
@@ -115,7 +111,6 @@
     margin-top: 10px;
   }
   
-  /* Education */
   .cvInstitution {
     font-weight: bold;
     font-size: 1.2em;
@@ -127,7 +122,6 @@
     font-size: 1em;
   }
   
-  /* Work Experience */
   .cvJob {
     margin-bottom: 30px;
   }
@@ -157,7 +151,6 @@
     margin-bottom: 10px;
   }
   
-  /* Projects */
   .cvProject {
     margin-bottom: 30px;
   }
@@ -174,7 +167,6 @@
     margin-top: 5px;
   }
   
-  /* Skills */
   .cvSkillsList {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -199,7 +191,6 @@
     transition: background-color 0.3s ease;
   }
   
-  /* Languages */
   .cvLanguagesList {
     list-style-type: none;
     padding: 0;
@@ -212,7 +203,6 @@
     color: #333;
   }
   
-  /* Certificates */
   .cvCertificate {
     font-weight: bold;
     font-size: 1.2em;
@@ -225,13 +215,11 @@
     color: #777;
   }
   
-  /* Interests */
   .cvInterestDescription {
     font-style: italic;
     color: #555;
   }
   
-  /* Footer Styling */
   .cvFooter {
     margin-top: 40px;
     text-align: center;
@@ -247,4 +235,313 @@
   .cvFooterLink:hover {
     text-decoration: underline;
   }
-  
+   */
+
+   .cvContainer {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.homeButton {
+    display: inline-block;
+    background-color: #0066cc;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.homeButton:hover {
+    background-color: #005bb5;
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.homeButton:focus {
+    outline: none;
+}
+
+/* Header section */
+.cvHeader {
+    text-align: center;
+    border-bottom: 3px solid #0066cc;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+}
+
+.cvName {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.cvTitle {
+    color: #777;
+    font-size: 1.9em;
+    margin: 0;
+}
+
+/* Contact Information */
+.cvContactInfo {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cvContactItem {
+    margin: 10px 15px;
+    font-size: 1em;
+    color: #555;
+}
+
+.cvContactLink,
+.cvSocialLink {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cvContactLink:hover,
+.cvSocialLink:hover {
+    text-decoration: underline;
+}
+
+/* Section Titles */
+.cvSectionTitle {
+    font-size: 1.8em;
+    color: #0066cc;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Content Sections */
+.cvSummarySection,
+.cvEducationSection,
+.cvWorkExperienceSection,
+.cvSkillsSection,
+.cvProjectsSection,
+.cvCertificatesSection,
+.cvLanguagesSection,
+.cvInterestsSection {
+    margin: 40px 0;
+}
+
+.cvSummaryText,
+.cvEducationText,
+.cvWorkExperienceText,
+.cvSkillsText,
+.cvProjectsText,
+.cvCertificatesText,
+.cvLanguagesText,
+.cvInterestsText {
+    font-size: 1.1em;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Education */
+.cvInstitution {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.cvLocation {
+    color: #777;
+    font-size: 1em;
+}
+
+/* Work Experience */
+.cvJob {
+    margin-bottom: 30px;
+}
+
+.cvJobTitle {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #333;
+}
+
+.cvJobDate {
+    color: #777;
+    font-style: italic;
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+.cvJobAchievements {
+    margin-left: 20px;
+    list-style-type: disc;
+    padding: 5px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.cvJobAchievement {
+    margin-bottom: 10px;
+}
+
+/* Projects */
+.cvProject {
+    margin-bottom: 30px;
+}
+
+.cvProjectTitle {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #333;
+}
+
+.cvProjectDescription {
+    font-size: 1.1em;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Skills */
+.cvSkillsList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.cvSkill {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    text-align: center;
+    color: #333;
+}
+
+.cvSkill:hover {
+    background-color: #0066cc;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+/* Languages */
+.cvLanguagesList {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.cvLanguage {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Certificates */
+.cvCertificate {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.cvCertificateDate {
+    font-style: italic;
+    color: #777;
+}
+
+/* Interests */
+.cvInterestDescription {
+    font-style: italic;
+    color: #555;
+}
+
+/* Footer Styling */
+.cvFooter {
+    margin-top: 40px;
+    text-align: center;
+    color: #777;
+    font-size: 1em;
+}
+
+.cvFooterLink {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.cvFooterLink:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cvContainer {
+        padding: 20px;
+    }
+
+    .cvHeader {
+        margin-bottom: 20px;
+    }
+
+    .cvName {
+        font-size: 2em;
+    }
+
+    .cvTitle {
+        font-size: 1em;
+    }
+
+    .cvContactItem {
+        font-size: 0.9em;
+    }
+
+    .cvSectionTitle {
+        font-size: 1.5em;
+    }
+
+    .cvSkillsList {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .homeButton {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cvContainer {
+        padding: 15px;
+    }
+
+    .cvName {
+        font-size: 1.5em;
+    }
+
+    .cvTitle {
+        font-size: 0.9em;
+    }
+
+    .cvSkillsList {
+        grid-template-columns: 1fr;
+    }
+
+    .cvFooter {
+        font-size: 0.9em;
+    }
+}

@@ -21,8 +21,8 @@ export const About = () => {
 
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/Adebayo.pdf"; // Adjust this path to where your CV file is stored
-    link.download = "AdebayoCV.pdf"; // The name the file will have when downloaded
+    link.href = "/ADEBAYO_CV.pdf"; // The path to where your CV file is stored
+    link.download = "ADEBAYO_CV.pdf"; // The name the file will have when downloaded
     link.click();
     closeModal();
   };

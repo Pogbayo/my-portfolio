@@ -41,10 +41,10 @@
     transition: transform 0.3s ease; 
 }
 
-.box:hover {
+/* .box:hover {
     transform: scale(1.05); 
     transform: rotate(-1deg);
-}
+} */
 
 
 .box:nth-child(1){
