@@ -266,10 +266,10 @@ export const Resume: React.FC = () => {
       <section className={styles.cvSummarySection}>
         <p className={styles.cvSummaryText}>
           I’m a web developer passionate about creating responsive and
-          user-friendly websites that solve real-world problems. With over a
-          year of experience, I’ve built and maintained modern web applications,
-          focusing on performance, accessibility, and clean code. I’m
-          comfortable working with databases, networks, and modern web
+          user-friendly websites that solve real-world problems. With over 2
+          years of experience, I’ve built and maintained modern web
+          applications, focusing on performance, accessibility, and clean code.
+          I’m comfortable working with databases, networks, and modern web
           technologies, and I enjoy making complex technical ideas easy to
           understand for people from all backgrounds. What sets me apart is my
           ability to balance strong technical skills with a deep understanding
@@ -294,37 +294,35 @@ export const Resume: React.FC = () => {
       <section className={styles.cvWorkExperienceSection}>
         <h2 className={styles.cvSectionTitle}>Work Experience</h2>
         <div className={styles.cvJob}>
-          <h3 className={styles.cvJobTitle}>
-            Human Resources Associate - Nestle NG
-          </h3>
+          <h3 className={styles.cvJobTitle}>Emnet IT</h3>
           <p className={styles.cvJobDate}>
-            <em>07/2024 - 11/2024, Lagos</em>
+            <em>February 2024/03 - Present</em>
           </p>
           <ul className={styles.cvJobAchievements}>
             <li className={styles.cvAchievement}>
-              Communicated with clients and customers to understand their needs
-              and provide relevant economic insights.
+              •Translated Figma and Adobe XD designs into fully functional,
+              responsive, and visually appealing web interfaces using React.js,
+              TypeScript, and Tailwind CSS.
             </li>
             <li className={styles.cvAchievement}>
-              Explained economic trends and their potential impact to customers
-              of various backgrounds.
+              Ensured design consistency and attention to detail, enhancing user
+              engagement and delivering interfaces that truly stood out.
             </li>
             <li className={styles.cvAchievement}>
-              Attended conferences, workshops, and training sessions to enhance
-              skills and knowledge.
+              Improved page load times and website performance by implementing
+              lazy loading, code-splitting, and optimizing asset delivery.
             </li>
             <li className={styles.cvAchievement}>
-              Gathering and analyzing data from various sources, including
-              economic indicators, financial reports, and market surveys
+              •Integrated RESTful APIs to fetch, display, and manage dynamic
+              data such as search results, real-time content updates, and form
+              submissions.
             </li>
           </ul>
         </div>
         <div className={styles.cvJob}>
-          <h3 className={styles.cvJobTitle}>
-            AWS APAC Solutions Architecture virtual experience program on Forage{" "}
-          </h3>
+          <h3 className={styles.cvJobTitle}>APEX BEE</h3>
           <p className={styles.cvJobDate}>
-            <em> April 2022</em>
+            <em>2023/01 - 2024/02</em>
           </p>
           <ul className={styles.cvJobAchievements}>
             <li className={styles.cvAchievement}>
@@ -345,9 +343,11 @@ export const Resume: React.FC = () => {
           </ul>
         </div>
         <div className={styles.cvJob}>
-          <h3 className={styles.cvJobTitle}>Technical Support - APEX BEE</h3>
+          <h3 className={styles.cvJobTitle}>
+            Technical Support - LUTATECH (INTERN)
+          </h3>
           <p className={styles.cvJobDate}>
-            <em>04/2024 - 10/2024, Lagos</em>
+            <em>August 2022 - December 2022</em>
           </p>
           <ul className={styles.cvJobAchievements}>
             <li className={styles.cvAchievement}>
@@ -395,52 +395,9 @@ export const Resume: React.FC = () => {
         </div>
       </section>
 
-      {/* Volunteer Section */}
-      <section className={styles.cvVolunteerSection}>
-        <h2 className={styles.cvSectionTitle}>Volunteer</h2>
-        <div className={styles.cvVolunteer}>
-          <h3 className={styles.cvVolunteerTitle}>
-            Volunteer Human Development Community Project
-          </h3>
-          <p className={styles.cvVolunteerDate}>
-            <em>08/2022 - 12/2022, Federal University of Ilorin</em>
-          </p>
-          <ul className={styles.cvVolunteerAchievements}>
-            <li className={styles.cvAchievement}>
-              Led a team of students and local community members to design and
-              implement sustainable practices.
-            </li>
-            <li className={styles.cvAchievement}>
-              Organized workshops for community members, resulting in a 30%
-              increase in awareness and adoption of sustainable practices.
-            </li>
-          </ul>
-        </div>
-        <div className={styles.cvVolunteer}>
-          <h3 className={styles.cvVolunteerTitle}>
-            Global Cleanup Day - Idumota Lagos Island
-          </h3>
-          <p className={styles.cvVolunteerDate}>
-            <em>09/2023</em>
-          </p>
-          <ul className={styles.cvVolunteerAchievements}>
-            <li className={styles.cvAchievement}>
-              Participated in a local environmental clean-up campaign.
-            </li>
-            <li className={styles.cvAchievement}>
-              Led educational sessions on waste segregation and recycling.
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      {/* Certifications Section */}
       <section className={styles.cvCertificatesSection}>
         <h2 className={styles.cvSectionTitle}>Certifications</h2>
         <ul className={styles.cvCertificatesList}>
-          <li className={styles.cvCertificate}>
-            AWS Certified Cloud Practitioner - February 2023
-          </li>
           <li className={styles.cvCertificate}>
             FreeCodeCamp Front-End Web Developer - November 2023
           </li>
@@ -450,7 +407,6 @@ export const Resume: React.FC = () => {
         </ul>
       </section>
 
-      {/* Skills Section */}
       <section className={styles.cvSkillsSection}>
         <h2 className={styles.cvSectionTitle}>Skills</h2>
         <ul className={styles.cvSkillsList}>
@@ -466,18 +422,6 @@ export const Resume: React.FC = () => {
         </ul>
       </section>
 
-      {/* Interests Section */}
-      <section className={styles.cvInterestsSection}>
-        <h2 className={styles.cvSectionTitle}>Interests</h2>
-        <ul className={styles.cvInterestsList}>
-          <li className={styles.cvInterest}>Nature & Wildlife Conservation</li>
-          <li className={styles.cvInterest}>Child Education</li>
-          <li className={styles.cvInterest}>Zero Hunger</li>
-          <li className={styles.cvInterest}>No Poverty</li>
-        </ul>
-      </section>
-
-      {/* Languages Section */}
       <section className={styles.cvLanguagesSection}>
         <h2 className={styles.cvSectionTitle}>Languages</h2>
         <ul className={styles.cvLanguagesList}>
