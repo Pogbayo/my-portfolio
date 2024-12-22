@@ -31,7 +31,7 @@ export const About = () => {
     <div className={styles.container} id="about">
       <div className={styles.AboutDesc}>
         <h1>Adebayo Olu</h1>
-        <p style={{ fontFamily: "cursive" }}>
+        <p>
           I’m a proficient software developer with experience in React,
           TypeScript, and NextJs, and expertise in frameworks such as Node.js.
           I’m a fast learner who works closely with clients to develop
