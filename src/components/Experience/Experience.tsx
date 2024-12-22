@@ -4,10 +4,10 @@ export const Experience = () => {
   return (
     <div className={styles.container} id="experience">
       <h1>Experience</h1>
-      <p className={styles.pTag}>
+      {/* <p className={styles.pTag}>
         My work experience as a software engineer and working on different
         companies and projects.
-      </p>
+      </p> */}
       <div className={styles.experienceBox}>
         {ExperienceData.map((data, index) => {
           return (
