@@ -1,20 +1,24 @@
 .container {
-    border-radius: 40px;
-    padding: 40px;
-    width: 80%;
+    border-radius: 30px;
+    /* padding: 40px; */
+    width: 70%;
     box-shadow: rgba(77, 85, 88, 0.9) 0px 30px 30px -20px;
-    margin: 20px auto;
-    margin-bottom: 90px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    color: white;
 }
 .formHeader{
     text-align: center;
+    font-family: cursive;
+    font-size: 20px;
 }
 .formHeader>h1{
     font-size:50px ;
     margin: 0;
 }
 .contactForm {
-   width: auto;  
+   max-width: 900px;  
    padding: 25px;
    margin: 0 auto;
    background-color: gray;
@@ -24,6 +28,12 @@
    align-items: center;
    flex-direction: column;
    border-radius: 20px;
+   background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.7), /* Light transparent white */
+        rgba(240, 240, 255, 0.4)  /* Slight blue tint */
+    );
+    backdrop-filter: blur(15px);
 }
 
 .contactForm label {
@@ -46,14 +56,13 @@
 }
 .contactForm textarea {
     width: 70%;
-    height: 200px;
+    height: 100px;
     padding: 15px 20px;
     margin-top: 1px;
     border: none;
     border-radius: 20px;
     background: #eaecece8;
     box-shadow: #cff0ff 0px 10px 10px -5px;
-    color: #333;
     transition: all 0.3s ease;
 }
 
@@ -130,19 +139,20 @@
 @media (max-width: 1700px) {
     .container{
         width: 100%;
-        max-width: 0 auto;
+        /* max-width: 0 auto; */
         padding: 5px;
     }
     .contactForm{
         padding: 10px;
         width: 90%;
         margin: 0 auto;
+        /* margin-right: 10px; */
     }
    .contactForm input{
-        width: 87%;
         padding: 20px 20px;
         border: none;
         border-radius: 20px;
+        width: 75%;
         box-shadow: #353d41 0px 10px 10px -5px;
         color: #333;
         transition: all 0.3s ease;
@@ -152,14 +162,14 @@
         margin: 0;
     }
     .contactForm textarea {
-        width: 87%;
-        height: 200px;
+        width: 80%;
+        height: 70px;
         padding: 15px 20px;
         margin-top: 1px;
         border: none;
         border-radius: 20px;
         box-shadow: #cff0ff 0px 10px 10px -5px;
-        color: #333;
+        color: red;
         transition: all 0.3s ease;
     }
     .contactForm button {

@@ -59,7 +59,6 @@ const ContactForm = () => {
   return (
     <div className={styles.container} id="contact">
       <div className={styles.formHeader}>
-        <h1>Contact Form</h1>
         <h3>
           Feel free to reach out to me for any questions or opportunities!
         </h3>
@@ -104,7 +103,11 @@ const ContactForm = () => {
         )}
 
         <label>Message</label>
-        <textarea {...register("message")} placeholder="Your message" />
+        <textarea
+          {...register("message")}
+          placeholder="Your message"
+          className="textarea"
+        />
         {errors.message && (
           <p className={styles.error}>{errors.message.message}</p>
         )}

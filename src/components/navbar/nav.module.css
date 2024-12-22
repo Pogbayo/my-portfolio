@@ -1,22 +1,28 @@
-
 .navHeader {
     display: flex;
     justify-content: space-between;
     padding-left: 15px;
-    padding-right:15px ;
+    padding-right: 15px;
     padding-top: 0;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background-color: #b4b4b4;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.7), /* Light transparent white */
+        rgba(240, 240, 255, 0.4)  /* Slight blue tint */
+    );
+    backdrop-filter: blur(15px); /* Adds the glass-like effect */
     z-index: 1000; /* Ensure navbar stays on top */
-    box-shadow: 0 4px 2px -2px gray; /* Optional shadow */
-    width: 95%; /* Full width to avoid layout shifts */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    width: 98%; /* Full width to avoid layout shifts */
     align-items: center;
-    justify-content: space-between;
     margin: 0 auto;
-  }
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Optional border for definition */
+    border-radius: 15px; /* Soft edges for the bubble effect */
+}
+
 
 .container {
     height: 7vh;
@@ -61,7 +67,7 @@
 }
 @media (max-width:1000px){
     .nameLogo{
-        font-size: 20px;
+        font-size: 25px;
     }
      .navHeader{
         padding-left: 10px;

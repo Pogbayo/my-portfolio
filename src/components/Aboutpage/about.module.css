@@ -6,7 +6,8 @@
     margin: 0 auto;
     width: 75%;
     margin-top: 10px;
-    background-color: #a7a5a5;
+    /* background-color: #a7a5a5; */
+    color: white;
 }
 .AboutDesc{
     width: 40%;
@@ -52,9 +53,10 @@
     height: 40px;
     font-size: 13px;
     font-weight: 700;
-    color: black;
+    color: white;
+    /* color: black; */
     background-color: transparent;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adjust shadow settings */
+    box-shadow: 0px 4px 8px rgba(245, 241, 241, 0.2); /* Adjust shadow settings */
     transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
     cursor: pointer;
 }
@@ -94,6 +96,12 @@
     width: 200px;
     border-radius: 20px;
     cursor: pointer;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.7), /* Light transparent white */
+      rgba(240, 240, 255, 0.4)  /* Slight blue tint */
+  );
+  backdrop-filter: blur(15px); 
   }
   .btn:hover{
     background: rgb(134, 132, 129);
@@ -105,13 +113,60 @@
         flex-direction: column-reverse;
         height: auto;
         width: 90%;
+        position: relative; /* Required for pseudo-element positioning */
+        margin-bottom: 20px;
     }
+    .container::after {
+        content: ""; /* Necessary to render the pseudo-element */
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px; /* Height of the "border" */
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.7), /* Light transparent white */
+          rgba(240, 240, 255, 0.4)  /* Slight blue tint */
+        );
+        backdrop-filter: blur(15px); /* Adds the glass-like effect */
+        z-index: 1; /* Ensure it overlays properly */
+        pointer-events: none; /* Prevent interaction with the pseudo-element */
+      }
+      .movingText {
+        font-size: 24px;
+        font-weight: bold;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 4px solid black; /* Creates a cursor effect */
+        display: inline-block;
+        animation: typing 5s steps(30) infinite, blink 0.75s step-end infinite;
+      }
+      
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+      
+      @keyframes blink {
+        50% {
+          border-color: transparent;
+        }
+      }
+      
     .AboutDesc{
+      margin-top: 20px;
         height: 40%;
         width: 90%;
     }
     .AboutDesc>h1{
         font-size: 22px;
+    }
+    .AboutDesc p{
+      word-spacing: 1px;
     }
     .myImg{
         width: 90%;
@@ -148,12 +203,18 @@
         width: 70%;
       }
       .aboutButton{
-        color: black;
         padding: 20px;
         width: auto;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 10px;
+        color: black;
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.7), /* Light transparent white */
+          rgba(240, 240, 255, 0.4)  /* Slight blue tint */
+      );
+      backdrop-filter: blur(15px); 
       }
 }

@@ -24,10 +24,14 @@ export const Footer = () => {
           </li>
         </ul>
         <div className={styles.logoDiv}>
-          <FaSquareTwitter size={30} color="black" />
+          <a href="">
+            <FaSquareTwitter size={30} color="black" />
+          </a>
           <FaLinkedin size={30} color="blue" />
           <FaWhatsapp size={30} color="green" />
-          <FaGithub size={30} />
+          <a href="https://github.com/Pogbayo" target="_blank">
+            <FaGithub size={30} />
+          </a>
         </div>
         <footer>© 2024 Adesanya Adebayo. All rights reserved.</footer>
       </section>

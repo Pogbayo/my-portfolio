@@ -24,14 +24,14 @@
         mainText:"Creating and customizing themes and plugins for iPlady's WordPress websites to enhance functionality and appearance.Regularly updating WordPress core, themes, and plugins, troubleshooting issues, and optimizing website performance to ensure iPlady's sites are secure, efficient, and user-friendly.",
         skills:"• Wordpress • Elementor • Elementorpro • Photoshop"
     },
-    // {
-    //     img:"/images/GQ8PWDQWMAAUFmD.jpg",
-    //     Header:"Graphic Designer",
-    //     headerText:"Alivee.co",
-    //     headerDate:"Jan 2022 - Present",
-    //     mainText:"Designing and producing visual content such as logos, banners, infographics, and marketing materials that align with Alivee's brand identity and objectives.",
-    //     skills:"• Photoshop • Adobe Illustrator"
-    // }
+    {
+        img:"/images/GQ8PWDQWMAAUFmD.jpg",
+        Header:"Graphic Designer",
+        headerText:"Alivee.co",
+        headerDate:"April 2022 - August 2022",
+        mainText:"Designing and producing visual content such as logos, banners, infographics, and marketing materials that align with Alivee's brand identity and objectives.",
+        skills:"• NextJs and Nima Design"
+    }
 ]
 
 // data.ts
@@ -48,34 +48,42 @@ export const projects: ProjectType[] = [
   {
     img: "/images/Travel.png",  
     title: "Project One",
-    description: "Travel Itinerary Platfrom.",
-    skills: "React, Typescript, Node.js",
+    description: "Travel Itinerary Platfrom where users can add flight,hotels and activities to their respective itineraries.",
+    skills: "ReactJs, Typescript, Node.js",
     liveLink: "https://assessment-pt6f.vercel.app/",
     codeLink: "https://github.com/Pogbayo/assessment",
   },
   {
     img: "/images/all-stars.png", 
     title: "Project Two",
-    description: "A crypto presale web application",
-    skills: "React, Typescript, Zod",
+    description: `A crypto presale web application landing page with a "connect wallet" functionality` ,
+    skills: "ReactJs, Typescript, Zod",
     liveLink: "https://www.allstarstoken.xyz/",
     codeLink: "https://github.com/Pogbayo/animation",
   },
-  // {
-  //   img: "/images/all-stars.png", 
-  //   title: "Project Two",
-  //   description: "A crypto presale web application",
-  //   skills: "React, Typescript, Zod",
-  //   liveLink: "https://www.allstarstoken.xyz/",
-  //   codeLink: "https://github.com/Pogbayo/animation",
-  // },
+  {
+    img: "/images/blog.png", 
+    title: "Project Three",
+    description: "A fully functional blog app with authentication for users to register and login and an Admin oanel to delete,add posts and also delte users",
+    skills: "NextJs and Typescript",
+    liveLink: "https://next-js-blog-app-g7rr.vercel.app/",
+    codeLink: "https://github.com/Pogbayo/NextJsBlogApp",
+  },
   {
     img: "/images/theta.png",  
-    title: "Project Three",
-    description: "A Web3 site landing page.",
-    skills: "React,zod and typescript",
+    title: "Project Four",
+    description: "A Cloud platform landing page utilizing the leaflet map library for geo-locations.",
+    skills: "ReactJs,zod and typescript",
     liveLink: "https://www.themaintheta.xyz/",
     codeLink: "https://github.com/Pogbayo/edge-cloud",
+  },
+  {
+    img: "/images/spotify.png",  
+    title: "Project Five",
+    description: "Spotify Clone App with an actual media playing functionality,next and previous ,play and a stop button",
+    skills: "ReactJs and typescript",
+    liveLink: "https://spotify-omega-drab.vercel.app/",
+    codeLink: "https://github.com/Pogbayo/Spotify",
   },
 ];
 

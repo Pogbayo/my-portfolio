@@ -21,8 +21,8 @@ export const About = () => {
 
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/ADEBAYO_CV.pdf"; // The path to where your CV file is stored
-    link.download = "ADEBAYO_CV.pdf"; // The name the file will have when downloaded
+    link.href = "/Bayo-Flow.pdf"; // The path to where your CV file is stored
+    link.download = "Bayo-FLow.pdf"; // The name the file will have when downloaded
     link.click();
     closeModal();
   };
@@ -30,11 +30,8 @@ export const About = () => {
   return (
     <div className={styles.container} id="about">
       <div className={styles.AboutDesc}>
-        <h1>
-          Hi, I am Adebayo <br />
-          Olu
-        </h1>
-        <p>
+        <h1>Adebayo Olu</h1>
+        <p style={{ fontFamily: "cursive" }}>
           I’m a proficient software developer with experience in React,
           TypeScript, and NextJs, and expertise in frameworks such as Node.js.
           I’m a fast learner who works closely with clients to develop
