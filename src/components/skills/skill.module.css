@@ -6,6 +6,7 @@
     height: auto;
     margin: 0 auto;
     color: white;
+    background-color: rgb(19, 5, 19);
 }
 .container>h1{
     font-size: 25px;
@@ -67,6 +68,7 @@
     border: 1px solid gray;
     text-align: center;
     gap: 5px;
+    color: white;
 }
 @media (max-width: 1400px) {
     .container .header{

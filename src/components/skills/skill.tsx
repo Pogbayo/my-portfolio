@@ -23,7 +23,7 @@ export const Skill = () => {
       </p>
       <section className={styles.boxDiv}>
         <div className={styles.box}>
-          <h1>Frontend</h1>
+          <h1 style={{ color: "white" }}>Frontend</h1>
           <div className={styles.techBox}>
             <div className={styles.techItem}>
               <FaHtml5 color="red" size={30} />
@@ -61,7 +61,7 @@ export const Skill = () => {
           </div>
         </div>
         <div className={styles.box}>
-          <h1>Backend</h1>
+          <h1 style={{ color: "white" }}>Backend</h1>
           <div className={styles.techBox}>
             <div className={styles.techItem}>
               <FaNodeJs color="green" size={30} />
@@ -74,7 +74,7 @@ export const Skill = () => {
           </div>
         </div>
         <div className={styles.box}>
-          <h1>Others</h1>
+          <h1 style={{ color: "white" }}>Others</h1>
           <div className={styles.techBox}>
             <div className={styles.techItem}>
               <FaGithub color="white" size={30} />
