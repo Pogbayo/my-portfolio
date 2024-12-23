@@ -25,10 +25,14 @@ export const Footer = () => {
         </ul>
         <div className={styles.logoDiv}>
           <a href="">
-            <FaSquareTwitter size={30} color="black" />
+            <FaSquareTwitter size={30} color="skyblue" />
           </a>
-          <FaLinkedin size={30} color="blue" />
-          <FaWhatsapp size={30} color="green" />
+          <a href="">
+            <FaLinkedin size={30} color="blue" />
+          </a>
+          <a href="">
+            <FaWhatsapp size={30} color="green" />
+          </a>
           <a href="https://github.com/Pogbayo" target="_blank">
             <FaGithub size={30} />
           </a>

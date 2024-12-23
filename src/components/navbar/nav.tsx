@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./nav.module.css";
 import { GiHamburgerMenu } from "react-icons/gi";
-
+import { SiDynatrace } from "react-icons/si";
 const Navbar = () => {
   const [hamburger, setHamburger] = useState<boolean>(false);
 
@@ -17,6 +17,8 @@ const Navbar = () => {
         {hamburger ? (
           <>
             <h1>
+              <SiDynatrace />
+
               <i className={styles.nameLogo}>Adebayo</i>
             </h1>
             <div className={styles.hamburger} onClick={showHamburger}>
@@ -63,33 +65,37 @@ const Navbar = () => {
           </>
         ) : (
           <>
-            <h1>
-              <i className={styles.nameLogo}>Adebayo</i>
-            </h1>
-            <nav className={styles.nav}>
-              <ul className={styles.navUl}>
-                <li>
-                  <a href="#about">ABOUT</a>
-                </li>
-                <li>
-                  <a href="#experience">EXPERIENCE</a>
-                </li>
-                <li>
-                  <a href="#project">PROJECTS</a>
-                </li>
-                <li>
-                  <a href="#contact">CONTACT</a>
-                </li>
-              </ul>
-            </nav>
-            <button className={styles.navGitButton}>
-              <a href="https://github.com/Pogbayo" target="_blank">
-                GitHub Profile
-              </a>
-            </button>
-            <div className={styles.hamburger} onClick={showHamburger}>
-              <GiHamburgerMenu size={40} />{" "}
-            </div>
+            <section className={styles.em}>
+              <h1>
+                <SiDynatrace />
+
+                <i className={styles.nameLogo}>Adebayo</i>
+              </h1>
+              <nav className={styles.nav}>
+                <ul className={styles.navUl}>
+                  <li>
+                    <a href="#about">ABOUT</a>
+                  </li>
+                  <li>
+                    <a href="#experience">EXPERIENCE</a>
+                  </li>
+                  <li>
+                    <a href="#project">PROJECTS</a>
+                  </li>
+                  <li>
+                    <a href="#contact">CONTACT</a>
+                  </li>
+                </ul>
+              </nav>
+              <button className={styles.navGitButton}>
+                <a href="https://github.com/Pogbayo" target="_blank">
+                  GitHub Profile
+                </a>
+              </button>
+              <div className={styles.hamburger} onClick={showHamburger}>
+                <GiHamburgerMenu size={40} />{" "}
+              </div>
+            </section>
           </>
         )}
       </header>

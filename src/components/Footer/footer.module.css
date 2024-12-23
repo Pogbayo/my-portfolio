@@ -1,8 +1,8 @@
 .container {
     background: linear-gradient(
         135deg,
-        rgba(255, 255, 255, 0.7), /* Light transparent white */
-        rgba(240, 240, 255, 0.4)  /* Slight blue tint */
+        rgba(27, 16, 16, 0.7), /* Light transparent white */
+        rgba(10, 10, 27, 0.4)  /* Slight blue tint */
     );
     backdrop-filter: blur(15px);    height: auto;
     border: 2px  blue;
@@ -11,10 +11,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 800px;
-    height: 600px;
+    height: 300px;
     margin: 0 auto;
     margin-top: 120px;
+    width: 100%;
     box-sizing: border-box; /* Ensures padding is included in the width */
 }
  
@@ -22,8 +22,8 @@
    border-radius: 10px;
    max-width:700px;
    /* background-color: rgb(197, 198, 199); */
-   background: #eaecece8;
-   box-shadow: #cff0ff 0px 10px 10px -5px;
+   /* background: #0d0b13; */
+   box-shadow: #495f69 0px 10px 10px -5px;
    transition: all 0.3s ease;   padding: 10px;
    text-align: center;
    display: flex;
@@ -32,6 +32,7 @@
    margin: 0 auto;
    gap: 30px;
    height: 100%;
+   width: 70%;
    justify-content: center;
    border-radius: inherit;
    box-sizing: border-box; /* Ensures padding is included in the width */
@@ -41,6 +42,7 @@
    font-size: 30px;
    margin: 0;
    font-weight: 700;
+   color: white;
 }
 .NavUl{
     display: flex;
@@ -49,9 +51,10 @@
     width: auto;
     padding: 10px;
     gap: 20px;
+
 }
 .sec>ul>li>a{
-    color: black;
+    color: white;
     font-size:18px ;
     text-decoration: none;
 }
@@ -73,20 +76,30 @@
         width: 90%; /* Ensure sec takes 90% of the container width */
         display: flex;
         margin: 0 auto ;
+
     }
-    .sec>ul{
+    
+    .NavUl{
+        border: 2px solid rgb(6, 71, 6);
         margin: 0 auto;
-        gap: 10px;
-        flex-direction: column;
+        gap: 7px;
         width: auto;
-        padding: 20px;
+    }
+    .sec>ul>li{
+        font-weight: 700;
+        color: white;
+        margin: 0 auto;
     }
     .sec>ul>li>a{
-        color: black;
-        font-size:15px ;
+        color: white;
+        font-size:10px ;
         text-decoration: none;
+
     }
     .sec>div{
         width: 60%;
+    }
+    footer{
+        color: white;
     }
 }

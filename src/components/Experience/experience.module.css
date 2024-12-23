@@ -7,41 +7,34 @@
     /* background-color: #a7a5a5; */
     padding-top: 20px;
     padding-bottom: 40px;
-    background: linear-gradient(
-        135deg,
-        rgba(255, 255, 255, 0.7), /* Light transparent white */
-        rgba(240, 240, 255, 0.4)  /* Slight blue tint */
-    );
-    backdrop-filter: blur(15px); 
+   
+    /* backdrop-filter: blur(15px);  */
 }
 .container>h1{
     text-align: center;
+    color: white;
+    margin-bottom: 0;
 }
 .container>p{
     text-align: center;
 }
 .experienceBox{
     display: flex;
-    border: 2px solid red;
     flex-direction: column;
     max-width: 800px;
     margin: 0 auto;
-    background-color: #b4b4b4;
     height: auto;
     margin-top: 20px;
     padding: 10px;
-    background: linear-gradient(
-        135deg,
-        rgba(255, 255, 255, 0.7), /* Light transparent white */
-        rgba(240, 240, 255, 0.4)  /* Slight blue tint */
-    );
-    border: 2px solid whitesmoke;
+    gap: 16px;
     border-radius: 20px;
     backdrop-filter: blur(15px); /* Adds the glass-like effect */
 }
 .pTag{
     width: 90%;
     margin: 0 auto;
+    color: gray;
+    font-size: 20px;
 }
 .box {
     gap: 12px;
@@ -52,11 +45,10 @@
     margin-top: 10px;
     margin-bottom: 10px;
     cursor: pointer;
-    background: linear-gradient(
-        135deg,
-        rgba(255, 255, 255, 0.7), /* Light transparent white */
-        rgba(240, 240, 255, 0.4)  /* Slight blue tint */
-    );
+    border: 0.1px solid rgb(192, 192, 192); /* Light gray for a shining effect */
+    box-shadow: rgba(192, 192, 192, 0.5) 0px 4px 6px, rgba(192, 192, 192, 0.25) 0px 1px 3px;
+    background: rgb(23, 23, 33);
+    color: rgb(206, 204, 204);
     backdrop-filter: blur(15px);     transition: transform 0.3s ease; 
 }
 
@@ -65,12 +57,12 @@
     transform: rotate(-1deg);
 } */
 
-.experienceBox{
+/* .experienceBox{
 
     background:#08081f ;
     box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.8), 
                 0 0 50px rgba(0, 0, 0, 0.6);
-}
+} */
 .box:nth-child(1){
     margin-top: 20px;
     margin-bottom: 20px;
@@ -91,7 +83,7 @@
     align-items: center;
 }
 .textDiv{
-    width: 80%;
+    width: 78%;
     text-align: start;
     font-weight: 700;
 }
@@ -116,7 +108,11 @@ img{
 
 @media (max-width: 900px) {
     .container{
-        width: 100%;
+        width: 90%;
+    }
+    .pTag{
+        font-size: 17px;
+        margin-top: 10px;
     }
     /* .container>h1{
         text-align: center;

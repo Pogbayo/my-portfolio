@@ -6,7 +6,6 @@ import emailjs from "emailjs-com";
 import { ContactPropsType } from "../lib/data"; // Assuming your data type is correct
 import styles from "./contactform.module.css"; // Ensure styles are imported correctly
 
-// Zod validation schema for the form
 const contactSchema = z.object({
   email: z.string().email("Please enter a valid email"),
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -59,12 +58,9 @@ const ContactForm = () => {
   return (
     <div className={styles.container} id="contact">
       <div className={styles.formHeader}>
-        <h3>
-          Feel free to reach out to me for any questions or opportunities!
-        </h3>
+        <h3>Contact me here </h3>
       </div>
 
-      {/* Success notification */}
       {showSuccess && (
         <div
           className={`${styles.successNotification} ${
@@ -76,38 +72,42 @@ const ContactForm = () => {
       )}
 
       <form className={styles.contactForm} onSubmit={handleSubmit(onSubmit)}>
-        <label>Email</label>
-        <input
-          {...register("email")}
-          type="email"
-          placeholder="Enter your email"
-        />
+        <div>
+          <label>Email :</label>
+          <input
+            {...register("email")}
+            type="email"
+            placeholder="enter your email"
+          />
+        </div>
         {errors.email && <p className={styles.error}>{errors.email.message}</p>}
 
-        <label>Name</label>
-        <input
-          {...register("name")}
-          type="text"
-          placeholder="Enter your name"
-        />
+        <div>
+          <label>Name :</label>
+          <input
+            {...register("name")}
+            type="text"
+            placeholder="enter your name"
+          />
+        </div>
         {errors.name && <p className={styles.error}>{errors.name.message}</p>}
 
-        <label>Subject</label>
-        <input
-          {...register("subject")}
-          type="text"
-          placeholder="Enter subject"
-        />
+        <div>
+          <label>Subject :</label>
+          <input
+            {...register("subject")}
+            type="text"
+            placeholder="enter subject"
+          />
+        </div>
         {errors.subject && (
           <p className={styles.error}>{errors.subject.message}</p>
         )}
 
-        <label>Message</label>
-        <textarea
-          {...register("message")}
-          placeholder="Your message"
-          className="textarea"
-        />
+        <div>
+          <label>Message :</label>
+          <textarea {...register("message")} placeholder="your message" />
+        </div>
         {errors.message && (
           <p className={styles.error}>{errors.message.message}</p>
         )}

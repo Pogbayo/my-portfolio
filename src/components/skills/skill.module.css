@@ -4,7 +4,6 @@
     justify-content: center;
     align-items: center;
     height: auto;
-    /* padding-bottom: 10px; */
     margin: 0 auto;
     color: white;
 }
@@ -19,25 +18,23 @@
     justify-content: center;
     display: grid;
     grid-template-columns: 1fr 1fr; 
-    gap: 20px; 
+    gap: 30px; 
     
 }
 .boxDiv .box{
     padding: 20px;
     text-align: center;
-    border: 1px solid gray;
+    border: 0.1px solid rgb(192, 192, 192); /* Light gray for a shining effect */
+    box-shadow: rgba(192, 192, 192, 0.5) 0px 4px 6px, rgba(192, 192, 192, 0.25) 0px 1px 3px;
+    
     width: 450px;
     height: auto;
     padding: 10px;
     /* background-color: #a7a5a5; */
-    color: black;
+    color: gray;
     right: 0;
-    
-    background: linear-gradient(
-        135deg,
-        rgba(255, 255, 255, 0.7), /* Light transparent white */
-        rgba(240, 240, 255, 0.4)  /* Slight blue tint */
-    );
+    border-radius: 5px;
+    background: rgb(23, 23, 33);
     backdrop-filter: blur(15px);
 }
 .boxDiv .box:nth-child(3) {
@@ -54,7 +51,12 @@
     padding: 10px;
     
 }
-
+.para{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 0;
+    color: gray;
+   }
 .techItem {
     display: flex;
     align-items: center;
@@ -66,7 +68,16 @@
     text-align: center;
     gap: 5px;
 }
+@media (max-width: 1400px) {
+    .container .header{
+        font-size: 40px;
+       }
+      
+}
 @media (max-width: 1000px) {
+    .container{
+        padding: 10px;
+    }
     .boxDiv {
         grid-template-columns: 1fr; 
         width: 100%;
@@ -81,13 +92,18 @@
     .techBox {
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
     }
+    .para{
+        text-align: center;
+        margin-top: 0;
+        color: gray;
+       }
 }
 
 @media (max-width: 480px) {
     .techBox {
         grid-template-columns: repeat(2, 1fr); 
     }
-
+  
     .techItem {
         height: 50px;
         font-size: 0.85rem; 

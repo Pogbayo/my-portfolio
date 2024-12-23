@@ -1,22 +1,26 @@
-.container{
-    display: flex;
-    padding: 20px;
-    height: 700px;
-    align-items: center;
-    margin: 0 auto;
-    width: 75%;
-    margin-top: 10px;
-    /* background-color: #a7a5a5; */
-    color: white;
+
+.container {
+  display: flex;
+  padding: 20px;
+  height: 700px;
+  align-items: center;
+  margin: 0 auto;
+  width: 70%;
+  color: white;
+  padding-top: 40px;
+  position: relative; /* Ensure the parent has a defined position */
 }
-.AboutDesc{
-    width: 40%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    justify-content: center;
-    padding-bottom: 10px;
+
+.AboutDesc {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  justify-content: center;
+  padding-bottom: 30px;
+  position: relative; /* Ensure the child does not overflow */
+  overflow: hidden; /* Prevent overflow */
 }
 .myImg{
     width: 60%;
@@ -24,12 +28,18 @@
     justify-content: center;
     align-items: center;
 }
-/* .myImg>img{
-    height: 500px;
-    width: 500px;
-    object-fit: cover;
-    border-radius: 50%;
-} */
+.texting{
+   color: rgb(133, 76, 230);
+   font-size: 30px;
+   font-weight: 900;
+   margin-top: 20px;
+   margin-bottom: 0;
+   font-family: Poppins, sans-serif;
+}
+.yourname{
+  color: white;
+  margin: 0;
+}
  .myImg>main{
     background-image: url(/images/wb.jpg);
     height: 500px;
@@ -37,26 +47,34 @@
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 50%;
+    border: 0.1px solid rgb(192, 192, 192); /* Light gray for a shining effect */
+    box-shadow: rgba(192, 192, 192, 0.5) 0px 4px 6px, rgba(192, 192, 192, 0.25) 0px 1px 3px; }
+ .aboutText{
+  color: gray;
+  margin-top: 0;
+  font-size: 19px;
  }
-.AboutDesc>h1{
+
+.AboutDesc .h1{
     font-size: 40px;
-    margin: 0;
-}
-.AboutDesc>p{
-    font-size: 18px;
-    font-weight: 500;
-    max-width: 700px;
-}
-.aboutButton {
-    border: 1px solid black;
-    width: 120px;
-    height: 40px;
-    font-size: 13px;
-    font-weight: 700;
+    font-weight: 900;
     color: white;
-    /* color: black; */
-    background-color: transparent;
-    box-shadow: 0px 4px 8px rgba(245, 241, 241, 0.2); /* Adjust shadow settings */
+}
+
+.aboutButton {
+    border: 1px solid rgb(88, 50, 80);
+    width: 320px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    border-radius: 10px;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.7), /* Light transparent white */
+      rgba(240, 240, 255, 0.4)  /* Slight blue tint */
+  );
+  backdrop-filter: blur(15px);     box-shadow: 0px 4px 8px rgba(245, 241, 241, 0.2); /* Adjust shadow settings */
     transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
     cursor: pointer;
 }
@@ -107,15 +125,48 @@
     background: rgb(134, 132, 129);
     color: black;
   }
+  
+  @media (max-width:1500px){
+    .container{
+      display: flex;
+      padding: 20px;
+      height: 700px;
+      align-items: center;
+      margin: 0 auto;
+      width: 90%;
+      color: white;
+  }
 
+  }
+  @media (max-width:1200px){
+    .container{
+      height: 700px;
+      padding-top: 90px;
+      width: 95%;
+      margin: 0 auto;
+      position: relative; /* Required for pseudo-element positioning */
+      margin-bottom: 20px;
+
+  }
+  .AboutDesc{
+    margin-top: 20px;
+      height: 90%;
+      width: 90%;
+      margin-right: 20px;
+  }
+  
+  }
 @media (max-width:1000px){
     .container{
         flex-direction: column-reverse;
         height: auto;
         width: 90%;
+        margin: 0 auto;
         position: relative; /* Required for pseudo-element positioning */
         margin-bottom: 20px;
+        
     }
+    
     .container::after {
         content: ""; /* Necessary to render the pseudo-element */
         position: absolute;
@@ -132,63 +183,64 @@
         z-index: 1; /* Ensure it overlays properly */
         pointer-events: none; /* Prevent interaction with the pseudo-element */
       }
-      .movingText {
-        font-size: 24px;
-        font-weight: bold;
-        white-space: nowrap;
-        overflow: hidden;
-        border-right: 4px solid black; /* Creates a cursor effect */
-        display: inline-block;
-        animation: typing 5s steps(30) infinite, blink 0.75s step-end infinite;
-      }
-      
-      @keyframes typing {
-        from {
-          width: 0;
-        }
-        to {
-          width: 100%;
-        }
-      }
-      
-      @keyframes blink {
-        50% {
-          border-color: transparent;
-        }
-      }
-      
+     
     .AboutDesc{
       margin-top: 20px;
         height: 40%;
         width: 90%;
     }
-    .AboutDesc>h1{
-        font-size: 22px;
-    }
-    .AboutDesc p{
-      word-spacing: 1px;
-    }
+    .AboutDesc .h1{
+      font-size: 25px;
+      font-weight: 900;
+      color: white;
+      /* font-stretch: extra-expanded; */
+  }
+    .texting{
+      font-size: 25px;
+      font-weight: 700;
+      margin-top: 10px;
+      margin-bottom: 0;
+   }
+   .yourname{
+     color: white;
+     margin: 0;
+     font-size: 20px;
+   }
+   .aboutText{
+    color: rgba(242, 243, 244, 0.584);
+    margin-top: 0;
+    font-size: 19px;
+    font-size: 16px;
+    line-height: 32px;
+    font-family: Poppins, sans-serif;
+
+   }
+  
     .myImg{
         width: 90%;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 20px;
+        height: auto;
     }
 
      .myImg>main{
-        /* background-image: url(/images/n.jpg); */
-        height: 250px;
-        width: 250px;
+        height: 330px;
+        width: 353px;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         border-radius: 50%;
      }
+     br{
+      display: none;
+     }
      .AboutDesc{
         text-align: center;
         align-items: center;
-        width: 90%;
+        width: 100%;
+        margin: 0 auto;
      }
      .modalContent {
         background: #b4b4b4;
@@ -204,7 +256,7 @@
       }
       .aboutButton{
         padding: 20px;
-        width: auto;
+        width: 70%;
         display: flex;
         justify-content: center;
         align-items: center;
