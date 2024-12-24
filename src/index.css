@@ -26,6 +26,7 @@ body::-webkit-scrollbar {
     width: 100%;
     overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 80px;
 }
 /* 
 background:#08081f ;
