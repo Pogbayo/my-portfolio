@@ -64,18 +64,18 @@ export const projects: ProjectType[] = [
   {
     img: "/images/blog.png", 
     title: "Project Three",
-    description: "A fully functional blog app with authentication for users to register and login and an Admin oanel to delete,add posts and also delte users",
+    description: "A fully functional blog app with authentication for users to register and login and an Admin panel to delete,add, post and also delete users",
     skills: "NextJs and Typescript",
     liveLink: "https://next-js-blog-app-g7rr.vercel.app/",
     codeLink: "https://github.com/Pogbayo/NextJsBlogApp",
   },
   {
-    img: "/images/theta.png",  
+    img: "/images/d-market.png",  
     title: "Project Four",
     description: "A Cloud platform landing page utilizing the leaflet map library for geo-locations.",
     skills: "ReactJs,zod and typescript",
-    liveLink: "https://www.themaintheta.xyz/",
-    codeLink: "https://github.com/Pogbayo/edge-cloud",
+    liveLink: "https://d-market-3z4m.vercel.app/",
+    codeLink: "https://github.com/Pogbayo/d-market",
   },
   {
     img: "/images/spotify.png",  

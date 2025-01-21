@@ -34,6 +34,7 @@ const Project = () => {
                 href={project.liveLink}
                 target="_blank"
                 rel="noopener noreferrer"
+                className={styles.liveDemo}
               >
                 Live Demo
               </a>
@@ -41,6 +42,7 @@ const Project = () => {
                 href={project.codeLink}
                 target="_blank"
                 rel="noopener noreferrer"
+                className={styles.sourceCode}
               >
                 Source Code
               </a>

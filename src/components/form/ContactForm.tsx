@@ -73,31 +73,34 @@ const ContactForm = () => {
 
       <form className={styles.contactForm} onSubmit={handleSubmit(onSubmit)}>
         <div>
-          <label>Email :</label>
+          <label htmlFor="email"> Email:</label>
           <input
             {...register("email")}
             type="email"
-            placeholder="enter your email"
+            placeholder="Enter your email"
+            id="email"
           />
         </div>
         {errors.email && <p className={styles.error}>{errors.email.message}</p>}
 
         <div>
-          <label>Name :</label>
+          <label htmlFor="name">Name</label>
           <input
             {...register("name")}
             type="text"
-            placeholder="enter your name"
+            placeholder="Enter your name"
+            id="name"
           />
         </div>
         {errors.name && <p className={styles.error}>{errors.name.message}</p>}
 
         <div>
-          <label>Subject :</label>
+          <label htmlFor="subject">Subject</label>
           <input
             {...register("subject")}
             type="text"
-            placeholder="enter subject"
+            placeholder="Enter subject"
+            id="subject"
           />
         </div>
         {errors.subject && (
@@ -105,14 +108,20 @@ const ContactForm = () => {
         )}
 
         <div>
-          <label>Message :</label>
-          <textarea {...register("message")} placeholder="your message" />
+          <label htmlFor="message">How Can I Help You?</label>
+          <textarea
+            {...register("message")}
+            placeholder="Your message"
+            id="message"
+          />
         </div>
         {errors.message && (
           <p className={styles.error}>{errors.message.message}</p>
         )}
 
-        <button type="submit">Send Message</button>
+        <button type="submit" className={styles.formSubmitBtn}>
+          Submit
+        </button>
       </form>
     </div>
   );
