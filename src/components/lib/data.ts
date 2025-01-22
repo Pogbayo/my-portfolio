@@ -72,7 +72,7 @@ export const projects: ProjectType[] = [
   {
     img: "/images/d-market.png",  
     title: "Project Four",
-    description: "A Cloud platform landing page utilizing the leaflet map library for geo-locations.",
+    description: "Developed a dynamic cart system for the e-commerce app using React.js and TypeScript, allowing users to pick and add items effortlessly with page authentication",
     skills: "ReactJs,zod and typescript",
     liveLink: "https://d-market-3z4m.vercel.app/",
     codeLink: "https://github.com/Pogbayo/d-market",
