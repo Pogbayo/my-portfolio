@@ -8,7 +8,7 @@
   width: 70%;
   color: white;
   padding-top: 40px;
-  position: relative; /* Ensure the parent has a defined position */
+  position: relative;
 }
 
 .AboutDesc {
@@ -19,8 +19,8 @@
   gap: 3px;
   justify-content: center;
   padding-bottom: 30px;
-  position: relative; /* Ensure the child does not overflow */
-  overflow: hidden; /* Prevent overflow */
+  position: relative; 
+  overflow: hidden; 
 }
 .myImg{
     width: 60%;
@@ -47,8 +47,10 @@
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 50%;
-    border: 0.1px solid rgb(192, 192, 192); /* Light gray for a shining effect */
-    box-shadow: rgba(192, 192, 192, 0.5) 0px 4px 6px, rgba(192, 192, 192, 0.25) 0px 1px 3px; }
+    border: 0.1px solid rgb(192, 192, 192); 
+    box-shadow: rgba(192, 192, 192, 0.5) 0px 4px 6px, rgba(192, 192, 192, 0.25) 0px 1px 3px; 
+  }
+
  .aboutText{
   color: gray;
   margin-top: 0;
@@ -101,7 +103,7 @@
   }
   
   .modalContent {
-    background: white;
+    background: rgb(87, 85, 85);
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -148,15 +150,15 @@
       padding-top: 90px;
       width: 95%;
       margin: 0 auto;
-      position: relative; /* Required for pseudo-element positioning */
+      position: relative; 
       margin-bottom: 20px;
 
   }
   .AboutDesc{
     margin-top: 20px;
-      height: 90%;
-      width: 90%;
-      margin-right: 20px;
+    height: 90%;
+    width: 90%;
+    margin-right: 20px;
   }
   
   }
@@ -166,26 +168,26 @@
         height: auto;
         width: 90%;
         margin: 0 auto;
-        position: relative; /* Required for pseudo-element positioning */
+        position: relative; 
         margin-bottom: 20px;
         
     }
     
     .container::after {
-        content: ""; /* Necessary to render the pseudo-element */
+        content: ""; 
         position: absolute;
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 2px; /* Height of the "border" */
+        height: 2px; 
         background: linear-gradient(
           135deg,
-          rgba(255, 255, 255, 0.7), /* Light transparent white */
-          rgba(240, 240, 255, 0.4)  /* Slight blue tint */
+          rgba(255, 255, 255, 0.7), 
+          rgba(240, 240, 255, 0.4)  
         );
-        backdrop-filter: blur(15px); /* Adds the glass-like effect */
-        z-index: 1; /* Ensure it overlays properly */
-        pointer-events: none; /* Prevent interaction with the pseudo-element */
+        backdrop-filter: blur(15px);
+        z-index: 1; 
+        pointer-events: none; 
       }
      
     .AboutDesc{
@@ -197,7 +199,6 @@
       font-size: 25px;
       font-weight: 900;
       color: white;
-      /* font-stretch: extra-expanded; */
   }
     .texting{
       font-size: 25px;

@@ -6,15 +6,16 @@ export const About = () => {
   const [modalOpen, setModalOpen] = useState<boolean>(false);
   const navigate = useNavigate();
 
-  // Typing effect states
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
-  const [delta, setDelta] = useState(100); // Reduced initial delta for faster typing
-  const toRotate = useMemo(() => ["NextJs developer", "Software engineer"], []);
-  const period = 1000; // Reduced period for faster pause between cycles
+  const [delta, setDelta] = useState(100);
+  const toRotate = useMemo(
+    () => ["NextJs developer", "Software engineer", "Postman"],
+    []
+  );
+  const period = 1000;
 
-  // Typing effect logic using useCallback
   const tick = useCallback(() => {
     const i = loopNum % toRotate.length;
     const fullText = toRotate[i];
@@ -25,7 +26,7 @@ export const About = () => {
     setText(updatedText);
 
     if (isDeleting) {
-      setDelta(50); // Faster speed during deletion
+      setDelta(50);
     }
 
     if (!isDeleting && updatedText === fullText) {
@@ -34,11 +35,10 @@ export const About = () => {
     } else if (isDeleting && updatedText === "") {
       setIsDeleting(false);
       setLoopNum((prev) => prev + 1);
-      setDelta(100); // Reset to faster typing speed
+      setDelta(100);
     }
   }, [loopNum, isDeleting, text, toRotate, period]);
 
-  // Typing effect useEffect
   useEffect(() => {
     const ticker = setInterval(() => {
       tick();
@@ -49,19 +49,18 @@ export const About = () => {
     };
   }, [delta, tick]);
 
-  // Modal handlers
   const openModal = () => setModalOpen(true);
   const closeModal = () => setModalOpen(false);
 
   const handleViewCV = () => {
-    navigate("/resume"); // Navigate to the CV details page
+    navigate("/resume");
     closeModal();
   };
 
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/Adebayo-Adesanya.pdf"; // The path to where your CV file is stored
-    link.download = "Adebayo-Adesanya.pdf"; // The name the file will have when downloaded
+    link.href = "/Adebayo-Adesanya.pdf";
+    link.download = "Adebayo-Adesanya.pdf";
     link.click();
     closeModal();
   };

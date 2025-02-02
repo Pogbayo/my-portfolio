@@ -57,9 +57,7 @@ const ContactForm = () => {
 
   return (
     <div className={styles.container} id="contact">
-      <div className={styles.formHeader}>
-        <h3>Contact me here </h3>
-      </div>
+      <div className={styles.formHeader}>Contact me</div>
 
       {showSuccess && (
         <div
@@ -73,7 +71,6 @@ const ContactForm = () => {
 
       <form className={styles.contactForm} onSubmit={handleSubmit(onSubmit)}>
         <div>
-          <label htmlFor="email"> Email:</label>
           <input
             {...register("email")}
             type="email"
@@ -84,7 +81,6 @@ const ContactForm = () => {
         {errors.email && <p className={styles.error}>{errors.email.message}</p>}
 
         <div>
-          <label htmlFor="name">Name</label>
           <input
             {...register("name")}
             type="text"
@@ -95,7 +91,6 @@ const ContactForm = () => {
         {errors.name && <p className={styles.error}>{errors.name.message}</p>}
 
         <div>
-          <label htmlFor="subject">Subject</label>
           <input
             {...register("subject")}
             type="text"
@@ -108,7 +103,6 @@ const ContactForm = () => {
         )}
 
         <div>
-          <label htmlFor="message">How Can I Help You?</label>
           <textarea
             {...register("message")}
             placeholder="Your message"
