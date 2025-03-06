@@ -61,14 +61,7 @@ export const projects: ProjectType[] = [
     liveLink: "https://www.allstarstoken.xyz/",
     codeLink: "https://github.com/Pogbayo/animation",
   },
-  {
-    img: "/images/blog.png", 
-    title: "NextJs Blog App",
-    description: "A fully functional blog app with authentication for users to register and login and an Admin panel to delete,add, post and also delete users",
-    skills: "NextJs and Typescript",
-    liveLink: "https://next-js-blog-app-g7rr.vercel.app/",
-    codeLink: "https://github.com/Pogbayo/NextJsBlogApp",
-  },
+  
   {
     img: "/images/d-market.png",  
     title: "Full Stack E-commerce App",
@@ -84,6 +77,14 @@ export const projects: ProjectType[] = [
     skills: "ReactJs and typescript",
     liveLink: "https://spotify-omega-drab.vercel.app/",
     codeLink: "https://github.com/Pogbayo/Spotify",
+  },
+  {
+    img: "/images/fresha.png", 
+    title: "Fullstack scheduling Saas app",
+    description: "I built a fullstack scheduling SaaS that allows users to explore various shops categorized by services and also book appointments. ",
+    skills: "NextJs and Typescript",
+    liveLink: "https://fresha-zxqo-git-fresha-adebayos-projects-556706dc.vercel.app/",
+    codeLink: "https://github.com/Pogbayo/fresha",
   },
 ];
 
